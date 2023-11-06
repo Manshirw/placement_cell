@@ -1,0 +1,358 @@
+<html lang="en" >
+  <!-- comment-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Block</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+       .container {
+                margin-top: 20px;
+      }
+      .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    
+    user-select: none;
+}
+.p-3 {
+    padding: 0rem!important;
+    margin-bottom: -50px;
+}
+
+#myCarousel{
+  background-image: linear-gradient(to bottom,#3DC5FF 90%,rgba(255, 255, 255, 255) 100%);
+   
+}
+
+.carousel-caption text-end,.carousel-caption{
+ font-size: 20px;
+
+}
+.img1 {
+  opacity: 0.9;
+  
+}
+.mx-auto {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img{
+    vertical-align: middle;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #2c80ffdd;
+  min-height: 50px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  align-items: flex;
+  color: white;
+}
+
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("wave.png");
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 0;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+</style>
+       
+    
+</head>
+<body>
+    
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.avif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Placement Cell
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="house.svg" alt="home_icon">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" href="/new"  aria-current="page">
+                  <img src="cloud.svg" alt="drive_icon">Drive</a>
+                
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="cursor.svg" alt="intern_icon"> Intership
+                </a>
+                <ul class="dropdown-menu">
+                 
+                  <li><a class="dropdown-item" href="/engineering">Engineering</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/management">Managemnet</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/law">Law</a></li>
+                </ul>
+              </li>
+               
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+      <main>
+       
+         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img class="img1" src="firstt.jpg"   width=100% alt="clg">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">First Step</font></font></h1>
+                  <p class="opacity-100"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In our desire to be the best we have always believed in building everlasting bonds with our corporate partners. </font></font></p>
+                  <p><a class="btn btn-lg btn-info" href="https://careerzone.anangpuria.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Career</font></font></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img class="img1"src="clgg.jpg" width=100% alt="clg">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Placement Cell</font></font></h1>
+                  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The Placement Cell of B.S.Anangpuria Institute of Technology and Management serves as an interface between the students and the corporate world. Apart from bringing various companies to the campus, the placement cell also organizes talks,internship opportunities and workshops for the collective student body.
+
+                   </font></font></p>
+                  <p><a class="btn btn-lg btn-info" href="/about"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">learn more</font></font></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="img1"src="worlddd.jpg" width=100% alt="clg">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1><font style="vertical-align: inherit; "><font style="vertical-align: inherit;">Corporate World</font></font></h1>
+                  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We ensure that we fulfil our primary focus of providing a helping hand to students in their initial step into the world of work, thereby creating a legacy.</font></font></p>
+                  <p><a class="btn btn-lg btn-info" href="https://anangpuria.com/student-life/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Browse the gallery</font></font></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the previous</font></font></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the next</font></font></span>
+          </button>
+        </div>
+       
+      
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+      
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="aboutt.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">About Us</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Excellence they say flows beyond boundaries and we at B.S.Anangpuria Educational Institute believe that the journey has just begun as we strive to scale new heights and in the process give a push start to career of the students
+                
+                </font></font></p>
+              <p><a class="btn btn-info" href="https://anangpuria.com/about-education/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="campus.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Campus</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Anangpurias is the must go Institutes for those who sincerely want to pursue their professional education and want to contribute to their respective professional fields. Over a period of 17 years, we have grown and evolved as the Institutes of eminence, passing many milestones and shaping traditions along the way. Our scholars have not only brought glory to their alma-mater by securing gold medals and/or attaining various merit positions in University examinations but also are excelling in their fields both nationally and internationally in every sphere be it teaching, research, high-end jobs. 
+
+                </font></font></p>
+              <p><a class="btn btn-info" href="https://anangpuria.com/campus-infrastructure/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="academics.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Academics</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The achievements and results of our candidates are powerful and compelling. Anangpuria has always consisted of people from diverse backgrounds. Anangpuria students rejoice all the festivals irrespective of their religion and perform all the rituals with great zeal and enthusiasm. Thus, the Anangpuria enjoys all the cultures and all the festivals are celebrated here in the campus itself with due respect.</font></font></p>
+              <p><a class="btn btn-info"  href="https://anangpuria.com/academics-2/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+      
+      
+          <!-- START THE FEATURETTES -->
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Environment</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> you desire</font></font></span></h2>
+              <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sometimes a campus visit can make all the difference. It helps you in gauging the campus environment, culture, and standard of education by diving deep into the campus life.
+                Anangpurias are always enthusiastic in demonstrating its campus and education possibilities available; hence welcome you to visit the campus on any working day.
+                Here you make your visit most informative and personalized by self-exploring the real-time process of teaching, learning & knowledge sharing and other aspects of
+                the campus life directly get in touch with the faculty members and students. </font></font></p>
+            </div>
+            <div class="col-md-5">
+              <img src="about.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" ><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Academics </font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">that lead to real knowleadge</font></font></span></h2>
+              <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We encourage our students to explore the academic landscape, discovering new passions and venturing into unfamiliar fields of knowledge that will help them explore new horizons. In their endeavor, they are mentored by distinguished faculty members who constantly push their thinking outside the conventional boundaries. We also encourage and guide our students to study, work or do research across the world.</font></font></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="p2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Opportunities</font></font><span class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> we offer</font></font></span></h2>
+              <p class="lead" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">At Anangpuria, we’re learning how to create a real difference. See how more happens here. Anangpuria challenges students to fully realize their best selves-mind, heart, and soul. Stretching from our Anangpuria campus to nationwide, our students, faculty, and alumni are hard at work everywhere, engaging in campus drives, festivals, and continuing to explore and achieve more at college.
+
+
+                </font><font style="vertical-align: inherit;">  </font></font></p>
+            </div>
+            <div class="col-md-5">
+              <img src="p3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+            </div>
+          </div>
+      
+          
+        
+          <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+      
+      
+        <!-- FOOTER -->
+        <div class="text-bg-info p-3" >
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+             <div class="wave" id="wave2"></div>
+             <div class="wave" id="wave3"></div>
+             <div class="wave" id="wave4"></div>
+          </div>
+          
+          <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="10" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+            <div class="col mb-3">
+              <h5>Quick Access</h5>
+              <ul class="nav flex-column">
+                <li class="menu" class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/about-education/" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="https://www.aicte-india.org/" class="nav-link p-0 text-body-secondary">AICTE</a></li>
+                <li class="nav-item mb-2"><a href="https://www.jcboseust.ac.in/" class="nav-link p-0 text-body-secondary">J.C. Bose University of Science and Technology, (YMCA)</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/student-life/" class="nav-link p-0 text-body-secondary">STudent Life</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Explore</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/facilities/" class="nav-link p-0 text-body-secondary">Facilities</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/campus-infrastructure/" class="nav-link p-0 text-body-secondary">Campus & Infrastructure</a></li>
+                <li class="nav-item mb-2"><a href="https://careerzone.anangpuria.com/" class="nav-link p-0 text-body-secondary">Career Zone</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/visitor/" class="nav-link p-0 text-body-secondary">Visitor</a></li>
+                <li class="nav-item mb-2"><a href="file:///C:/Users/DELL/Desktop/a/web%20development(projects)/udemy/bootstrap/placement%20cell/login.html" class="nav-link p-0 text-body-secondary">Students</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Department</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/master-of-business-administration/" class="nav-link p-0 text-body-secondary">Master of Business Administration</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/computer-science-engineering/" class="nav-link p-0 text-body-secondary">B.Tech (Cse)</a></li>
+                <li class="nav-item mb-2"><a href="https://cse.anangpuria.com/information-technology/" class="nav-link p-0 text-body-secondary">B.Tech (IT)</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/bachelor-of-pharmacy/" class="nav-link p-0 text-body-secondary">Bachelor of Pharmacy</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/bachelor-of-laws/" class="nav-link p-0 text-body-secondary">Bachelor of Laws</a></li>
+              </ul>
+            </div>
+       
+          </footer>
+        </div>
+     
+      </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

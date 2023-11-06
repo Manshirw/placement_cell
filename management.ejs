@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Cell</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+ .container {
+                margin-top:50px;
+      }
+      .p-3 {
+    padding: 0rem!important;
+    margin-bottom: -50px;
+}  
+.space{
+  margin-top: 200px;
+}     
+footer {
+  position: relative;
+  width: 100%;
+  background: #2c80ffdd;
+  min-height: 50px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  align-items: flex;
+  color: white;
+}
+
+/*wave and animation*/
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("wave.png");
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 0;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.space2{
+  margin-top: 70px;
+}
+
+</style>
+    
+</head>
+<body>
+    
+ <div class="container">
+ 
+    <h1 >Internship</h1>
+    <h3>Management Department</h3>
+ 
+  <form class="space2"action="/submit" target="_blank"method="post">
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Company name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="company" >
+      </div>
+    </div>
+    
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">About the company</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="About the company">
+      </div>
+    </div>
+    
+    
+   
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Location</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="Location">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Package</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"name="amount" >
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Roles and Responsibilities</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="Roles and Responsibilities">
+      </div>
+    </div>
+    
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Last Date to apply</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="DD/MM/YYYY" name="Last Date to apply" >
+      </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputEmail3"class="col-sm-2 col-form-label"> Registration Link</label>
+        <div class="col-sm-10">
+          
+          <input type="text" class="form-control" placeholder="https://example.com/users/" name="link">
+        </div>
+        
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+
+
+
+ </div>
+<div class="space">
+
+</div>
+
+ <!-- FOOTER -->
+    <div class="text-bg-info p-3 " >
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+             <div class="wave" id="wave2"></div>
+             <div class="wave" id="wave3"></div>
+             <div class="wave" id="wave4"></div>
+          </div>
+          
+          <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="10" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+            <div class="col mb-3">
+              <h5>Quick Access</h5>
+              <ul class="nav flex-column">
+                <li class="menu" class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/about-education/" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="https://www.aicte-india.org/" class="nav-link p-0 text-body-secondary">AICTE</a></li>
+                <li class="nav-item mb-2"><a href="https://www.jcboseust.ac.in/" class="nav-link p-0 text-body-secondary">J.C. Bose University of Science and Technology, (YMCA)</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/student-life/" class="nav-link p-0 text-body-secondary">STudent Life</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Explore</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/facilities/" class="nav-link p-0 text-body-secondary">Facilities</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/campus-infrastructure/" class="nav-link p-0 text-body-secondary">Campus & Infrastructure</a></li>
+                <li class="nav-item mb-2"><a href="https://careerzone.anangpuria.com/" class="nav-link p-0 text-body-secondary">Career Zone</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/visitor/" class="nav-link p-0 text-body-secondary">Visitor</a></li>
+                <li class="nav-item mb-2"><a href="file:///C:/Users/DELL/Desktop/a/web%20development(projects)/udemy/bootstrap/placement%20cell/login.html" class="nav-link p-0 text-body-secondary">Students</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Department</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/master-of-business-administration/" class="nav-link p-0 text-body-secondary">Master of Business Administration</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/computer-science-engineering/" class="nav-link p-0 text-body-secondary">B.Tech (Cse)</a></li>
+                <li class="nav-item mb-2"><a href="https://cse.anangpuria.com/information-technology/" class="nav-link p-0 text-body-secondary">B.Tech (IT)</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/bachelor-of-pharmacy/" class="nav-link p-0 text-body-secondary">Bachelor of Pharmacy</a></li>
+                <li class="nav-item mb-2"><a href="https://anangpuria.com/departments/bachelor-of-laws/" class="nav-link p-0 text-body-secondary">Bachelor of Laws</a></li>
+              </ul>
+            </div>
+       
+          </footer>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
